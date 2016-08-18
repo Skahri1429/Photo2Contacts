@@ -13,9 +13,12 @@
 		287B136A1D65A4D100414270 /* Photo2Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 287B13681D65A4D100414270 /* Photo2Contacts.xcdatamodeld */; };
 		287B136C1D65A4D100414270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287B136B1D65A4D100414270 /* Assets.xcassets */; };
 		287B136F1D65A4D100414270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287B136D1D65A4D100414270 /* LaunchScreen.storyboard */; };
+		E5113B075EB47C28D24BC9D3 /* Pods_Photo2Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AAAE67B3745B9B0AEFC0F1 /* Pods_Photo2Contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16AAAE67B3745B9B0AEFC0F1 /* Pods_Photo2Contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo2Contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20923E05250B8683B0EA13C6 /* Pods-Photo2Contacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo2Contacts.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photo2Contacts/Pods-Photo2Contacts.release.xcconfig"; sourceTree = "<group>"; };
 		287B135E1D65A4D100414270 /* Photo2Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photo2Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287B13611D65A4D100414270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		287B13631D65A4D100414270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		287B136B1D65A4D100414270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		287B136E1D65A4D100414270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		287B13701D65A4D100414270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956B956C8290680C58A1413A /* Pods-Photo2Contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo2Contacts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photo2Contacts/Pods-Photo2Contacts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5113B075EB47C28D24BC9D3 /* Pods_Photo2Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171E5E0823497AB294092F2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16AAAE67B3745B9B0AEFC0F1 /* Pods_Photo2Contacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		287B13551D65A4D100414270 = {
 			isa = PBXGroup;
 			children = (
 				287B13601D65A4D100414270 /* Photo2Contacts */,
 				287B135F1D65A4D100414270 /* Products */,
+				F344B29542C3C046BA7EE792 /* Pods */,
+				171E5E0823497AB294092F2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = Photo2Contacts;
 			sourceTree = "<group>";
 		};
+		F344B29542C3C046BA7EE792 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				956B956C8290680C58A1413A /* Pods-Photo2Contacts.debug.xcconfig */,
+				20923E05250B8683B0EA13C6 /* Pods-Photo2Contacts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 287B13731D65A4D100414270 /* Build configuration list for PBXNativeTarget "Photo2Contacts" */;
 			buildPhases = (
+				79989D61CC3DB9E5772E8B26 /* [CP] Check Pods Manifest.lock */,
 				287B135A1D65A4D100414270 /* Sources */,
 				287B135B1D65A4D100414270 /* Frameworks */,
 				287B135C1D65A4D100414270 /* Resources */,
+				7ED58E8739CC9B23518B1351 /* [CP] Embed Pods Frameworks */,
+				12384483455B143D9EED85C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12384483455B143D9EED85C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo2Contacts/Pods-Photo2Contacts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79989D61CC3DB9E5772E8B26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED58E8739CC9B23518B1351 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo2Contacts/Pods-Photo2Contacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		287B135A1D65A4D100414270 /* Sources */ = {
@@ -253,6 +328,7 @@
 		};
 		287B13741D65A4D100414270 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 956B956C8290680C58A1413A /* Pods-Photo2Contacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Photo2Contacts/Info.plist;
@@ -264,6 +340,7 @@
 		};
 		287B13751D65A4D100414270 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20923E05250B8683B0EA13C6 /* Pods-Photo2Contacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Photo2Contacts/Info.plist;
@@ -292,6 +369,7 @@
 				287B13751D65A4D100414270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
